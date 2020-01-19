@@ -28,13 +28,17 @@ public class VirtualPet2App {
 		
 		if(menuOption.equals("1")) {
 			System.out.println("You fed " + petsName + " Blue Ribbon.");
+			myPet.eat();
 			System.out.println(petsName + " hunger level is " + myPet.getHunger());
 		
-		}if(menuOption.equals("2")) {
-			System.out.println("You gave " + petsName + " toilet water.");
-			System.out.println(petsName + " thirst level is " + myPet.getThirst());
 		}
 		
+		if(menuOption.equals("2")) {
+			System.out.println("You gave " + petsName + " toilet water.");
+			myPet.drink();
+			System.out.println(petsName + " thirst level is " + myPet.getThirst());
+		}
+		else {System.out.println("double cheese burger");}
 		//VirtualPet2 myDog = new VirtualPet2(thirst, hunger, bordom, apperance, health, enegry, petsName);
 		
 		
