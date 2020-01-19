@@ -1,14 +1,15 @@
 //cookie cutter template (blueprint)
 public class VirtualPet2 {
 
-	private int thirst = 0;
-	private int hunger = 0;
-	private int bordom = 0;
+	private int thirst=0;
+	private int hunger=0;
+	private int bordom=0;
 	private int apperance = 0;
 	private int health = 0;
 	private int enegry = 0;
 	private String petsName = "";
 	private String petDescription = "";
+	
 	
 	public VirtualPet2  (int thirst, int hunger, int bordom, int apperance, int health, int enegry, String petsName) {
 		this.thirst = thirst;
@@ -22,10 +23,14 @@ public class VirtualPet2 {
 		
 	}
 	
-	
-	
 	public VirtualPet2() {
-		// TODO Auto-generated constructor stub
+		
+	}
+	
+	public VirtualPet2(int thirst, int hunger, int bordom) {//math random constructor
+		this.thirst = thirst++;
+		this.hunger = hunger++;
+		this.bordom = bordom++;
 	}
 
 

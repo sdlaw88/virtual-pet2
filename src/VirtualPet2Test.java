@@ -125,7 +125,7 @@ class VirtualPet2Test {
 	@Test
 	public void justTestingDefaultConstructor() {
 		//arrange
-		VirtualPet2 defConstructor = new VirtualPet2();
+		VirtualPet2 defConstructor = new VirtualPet2("", " ");
 		//act
 		int result = defConstructor.getBordom();
 		//assert
